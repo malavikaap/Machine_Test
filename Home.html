@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Logo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        .navbar {
+            background-color: white;
+        }
+
+        .navbar-brand img {
+            height: 40px;
+            width: auto;
+        }
+
+        .nav-link {
+            color: black !important;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #007bff !important;
+        }
+
+        .login-btn {
+            background-color: white;
+            color: black;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            margin-right: 10px;
+        }
+
+        .login-btn:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .login-image {
+            height: 30px;
+            width: auto;
+        }
+
+        .background-section {
+            background: url('C:/Users/malav/OneDrive/Desktop/demo/DSC08612NEW%201.png') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            /* Align to the left */
+            color: white;
+            text-align: left;
+            /* Align text to the left */
+            padding: 20px;
+            padding-left: 50px;
+        }
+
+        .background-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .background-section p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .search-input {
+            padding: 10px;
+            font-size: 1rem;
+            width: 800px;
+            border-radius: 5px 0 0 5px;
+            border: none;
+        }
+
+        .search-btn {
+            padding: 10px;
+            font-size: 1rem;
+            background-color: white;
+            color: blue;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+
+        .search-btn:hover {
+            background-color: #0056b3;
+        }
+
+
+        .bottom-image {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: auto;
+            height: 10px;
+        }
+
+
+        .popular-labs-section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .popular-labs-section h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .labs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .lab-item img {
+            width: 100%;
+            height: auto;
+            max-width: 120px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg shadow-sm">
+        <div class="container">
+
+            <a class="navbar-brand" href="#home">
+                <img src="C:/Users/malav/OneDrive/Desktop/demo/image%2010.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#get-app">Get the App</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#add-lab">Add Lab</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex align-items-center">
+                    <button class="btn login-btn">Login / Signup</button>
+                    <img src="C:/Users/malav/OneDrive/Desktop/demo/Frame%20337.png" alt="Login Icon"
+                        class="login-image">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="background-section">
+        <div>
+            <h1> We have served more<br> than 7000+ customers</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur <br> adipiscing elit mollis quisque senectus massa <br>lobortis,
+                scelerisque maecenas sagittis faucibus <br>integer
+            </p>
+
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search for test">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <p>We are associated with more than 25+ labs.</p>
+        </div>
+        <img src="C:/Users/malav/OneDrive/Desktop/demo/Frame%2039561%20(1).png" alt="Bottom Image" class="bottom-image">
+    </div>
+    <div class="popular-labs-section">
+        <h2>Popular Lab in Your City</h2>
+        <div class="labs-grid">
+            <div class="lab-item">
+                <img src="C:\Users\malav\OneDrive\Desktop\demo\Care.png" alt="Lab 1">
+            </div>
+            <div class="lab-item">
+                <img src="C:\Users\malav\OneDrive\Desktop\demo\Dane.png" alt="Lab 2">
+            </div>
+            <div class="lab-item">
+                <img src="C:\Users\malav\OneDrive\Desktop\demo\Garuda.png" alt="Lab 3">
+            </div>
+            <div class="lab-item">
+                <img src="C:\Users\malav\OneDrive\Desktop\demo\CPC logo.png" alt="Lab 4">
+            </div>
+
+            <div class="lab-item">
+                <img src="C:\Users\malav\OneDrive\Desktop\demo\Immucare.png" alt="Lab 4">
+            </div>
+            <div class="lab-item">
+                <img src="C:\Users\malav\OneDrive\Desktop\demo\Aza.png" alt="Lab 4">
+            </div>
+            <div class="lab-item">
+                <img src="C:\Users\malav\OneDrive\Desktop\demo\Jeeva.png" alt="Lab 4">
+            </div>
+            <div class="lab-item">
+                <img src="C:\Users\malav\OneDrive\Desktop\demo\DDRC logo.png" alt="Lab 4">
+            </div>
+            <div class="lab-item">
+                <img src="C:\Users\malav\OneDrive\Desktop\demo\Hygea.png" alt="Lab 4">
+            </div>
+            <div class="lab-item">
+                <img src="C:\Users\malav\OneDrive\Desktop\demo\aswini logo.png" alt="Lab 4"><br>
+            </div>
+            <div class="lab-item">
+                <img src="C:\Users\malav\OneDrive\Desktop\demo\Metropolis.png" alt="Lab 4">
+            </div>
+            <div class="lab-item">
+                <img src="C:\Users\malav\OneDrive\Desktop\demo\Polyclinic.png" alt="Lab 4">
+            </div>
+            <div class="lab-item">
+                <img src="C:\Users\malav\OneDrive\Desktop\demo\R-Cell.png" alt="Lab 4">
+            </div>
+            <div class="lab-item">
+                <img src="C:\Users\malav\OneDrive\Desktop\demo\Neuberg logo.png" alt="Lab 4">
+            </div>
+            <div class="lab-item">
+                <img src="C:\Users\malav\OneDrive\Desktop\demo\Lashmi hospital.png" alt="Lab 4">
+            </div>
+            <div class="lab-item">
+                <img src="C:\Users\malav\OneDrive\Desktop\demo\Vithayathil.png" alt="Lab 4">
+            </div>
+            <div class="lab-item">
+                <img src="C:\Users\malav\OneDrive\Desktop\demo\Microbiology Centre.png" alt="Lab 4">
+            </div>
+            <div class="lab-item">
+                <img src="C:\Users\malav\OneDrive\Desktop\demo\Microhealth.png" alt="Lab 4">
+            </div>
+            <div class="lab-item">
+                <img src="C:\Users\malav\OneDrive\Desktop\demo\Thyocare.png" alt="Lab 4"><br>
+            </div>
+            <div class="lab-item">
+                <img src="C:\Users\malav\OneDrive\Desktop\demo\Fathima Hospital.png" alt="Lab 4">
+            </div>
+            <div class="lab-item">
+                <img src="C:\Users\malav\OneDrive\Desktop\demo\Daya.png" alt="Lab 4">
+            </div>
+            <div class="lab-item">
+                <img src="C:\Users\malav\OneDrive\Desktop\demo\Starcare logo.png" alt="Lab 4">
+            </div>
+            <div class="lab-item">
+                <img src="C:\Users\malav\OneDrive\Desktop\demo\lalpath.png" alt="Lab 4">
+            </div>
+            <div class="lab-item">
+                <img src="C:\Users\malav\OneDrive\Desktop\demo\MIMS.png" alt="Lab 4">
+            </div>
+            <div class="lab-item">
+                <img src="C:\Users\malav\OneDrive\Desktop\demo\Aayush logo.png" alt="Lab 4">
+            </div>
+            <div class="lab-item">
+                <img src="C:\Users\malav\OneDrive\Desktop\demo\BMH.png" alt="Lab 4">
+            </div>
+            <div class="lab-item">
+                <img src="C:\Users\malav\OneDrive\Desktop\demo\Iqraa.png" alt="Lab 4">
+            </div>
+            <div class="lab-item">
+                <img src="C:\Users\malav\OneDrive\Desktop\demo\Vivid.png" alt="Lab 4">
+            </div>
+            </var></var>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
